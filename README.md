@@ -1,13 +1,13 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : Lathika sree R
+Register no: 212224040169
+Date of experiment : 22-08-2025
 
 
 
 
 
-## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
+## Aim: To Write and execute ALP on fundamental arithmetic and logical operations using 8086
 ## Components required: 8086  emulator 
 ## Theory 
 Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as EMU8086, is an emulator of the program 8086 microprocessor. It is developed with a built-in 8086 assembler. This application is able to run programs on both PC desktops and laptops. This tool is primarily designed to copy or emulate hardware. These include the memory of a program, CPU, RAM, input and output devices, and even the display screen. There are instructions to follow when using this emulator. It can be executed into one of the two ways: backward or forward. There are also examples of assembly source code included. With this, it allows the programming of assembly language, reverse engineering, hardware architecture, and creating miniature operating system (OS). The user interface of 8086 Microprocessor Emulator is simple and easy to manage. There are five major buttons with icons and titles included. These are “Load”, “Reload”, “Step Back”, “Single Step”, and “Run”. Above those buttons is the menu that includes “File”, “View”, “Virtual Devices”, “Virtual Drive”, and “Help”. Below the buttons is a series of choices that are usually in numbers and codes. At the leftmost part is an area called “Registers” with an indication of either “H” or “L”. The other side is divided into two, which enables users to manually reset, debug, flag, etc. What is 8086 emulator emu8086 is an emulator of Intel 8086 (AMD compatible) microprocessor with integrated 8086 assembler and tutorials for beginners. Emulator runs programs like the real microprocessor in step-by-step mode. it shows registers, memory, stack, variables and flags.
@@ -76,26 +76,50 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations
+```
+org 100h
 
-## Addition  of 8 bit ALP 
+MOV AX, 2468H
+MOV BX, 2132H
+ADD AX, BX
+MOV [2000H], AX
+SUB AX, BX
+MOV [2010H], AX
+MUL CX 
+MOV [2020H], AX
+DIV CX 
+MOV [2030H], AX
 
+ret
+```
 
 
 ## Output  
+<img width="1919" height="1138" alt="Screenshot 2025-08-22 093713" src="https://github.com/user-attachments/assets/b6c27b5c-99d8-42e1-9504-45b0408eb015" />
+
  
-## Subtraction   of 8 bit numbers  ALP 
- 
+## Programs for logic operations
+```
+org 100h
+mov ax, 1245h
+mov bx, 2334H
+and ax, bx
+mov [1000h],ax
+or ax,bx
+mov [1002h],ax
+xor ax, bx
+mov [1004h],ax
+not bx
+mov [1006h],ax
+ret
+```
+
 ## Output  
-## Multiplication alp 
- ## Output  
-
-
-## Division alp 
-
-## Output  
+<img width="1919" height="1140" alt="Screenshot 2025-08-22 094324" src="https://github.com/user-attachments/assets/8f9e51a4-d58e-4d77-868c-2dfce8da7df3" />
 
 
 ## Result :
+Thus, the program has been executed successfully.
  
 
 
